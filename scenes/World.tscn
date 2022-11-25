@@ -1,6 +1,3 @@
 [gd_scene format=2]
 
 [node name="World" type="Node"]
-
-[node name="TileMap" type="TileMap" parent="."]
-format = 1
