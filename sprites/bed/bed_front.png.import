@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/door_bottom.png-9a6dab0d33a7eac9b7cea866f27344d8.stex"
+path="res://.import/bed_front.png-16eeda3d4dc385d56a431ca796870f02.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/doora/door_bottom.png"
-dest_files=[ "res://.import/door_bottom.png-9a6dab0d33a7eac9b7cea866f27344d8.stex" ]
+source_file="res://sprites/bed/bed_front.png"
+dest_files=[ "res://.import/bed_front.png-16eeda3d4dc385d56a431ca796870f02.stex" ]
 
 [params]
 

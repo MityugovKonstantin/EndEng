@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/door_left.png-1e95e0ab9c2f8c282d1ef0238e94c38d.stex"
+path="res://.import/pause_menu.png-f60475fe1a3c79d43dfcf7e7f2e40e65.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/doora/door_left.png"
-dest_files=[ "res://.import/door_left.png-1e95e0ab9c2f8c282d1ef0238e94c38d.stex" ]
+source_file="res://sprites/menu/pause_menu.png"
+dest_files=[ "res://.import/pause_menu.png-f60475fe1a3c79d43dfcf7e7f2e40e65.stex" ]
 
 [params]
 
