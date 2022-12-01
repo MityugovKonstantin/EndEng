@@ -1,19 +1,16 @@
 extends Spatial
 
 onready var player = $Player
-onready var pauseMenu = $PauseMenu
 
-
-var isPaused: bool = false
-
+var is_paused: bool = false
 
 func _ready():
 	pass
 
-
 func player_enable():
-	player.isActive = true
-
+	print("[world -> player_enable]: player was enabled")
+	player.is_active = true
 
 func player_disable():
-	player.isActive = false
+	print("[world -> player_enable]: player was disabled")
+	player.is_active = false

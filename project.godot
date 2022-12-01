@@ -24,6 +24,11 @@ window/size/test_height=540
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
 
+[global]
+
+"сцен"=false
+my=false
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
