@@ -66,32 +66,32 @@ func _physics_process(_delta):
 	velocity = move_and_slide(velocity)
 
 func _on_InteractiveObjectDetected_body_entered(object):
-	if !object:
-		print("[player -> ..._body_entered]: object -> " + object.name + " is died")
 	print("[player -> ..._body_entered]: body is " + object.name)
-	if object != self:
-		if object.is_died != true:
-			if object != null:
-				if r == null:
-					r = weakref(object)
-					var hint = object.get_hint()
-					var answer = object.get_answer()
-					print("[player -> ..._body_entered]: hint = " + hint)
-					print("[player -> ..._body_entered]: answer = " + answer)
-					if !object.is_died:
-						emit_signal("sig_enable", hint, answer)
-						if object.has_method("enable"):
-							object.enable()
+	if object is InteractiveObject:
+		if object != self:
+			if object.is_died != true:
+				if object != null:
+					if r == null:
+						r = weakref(object)
+						var hint = object.get_hint()
+						var answer = object.get_answer()
+						print("[player -> ..._body_entered]: hint = " + hint)
+						print("[player -> ..._body_entered]: answer = " + answer)
+						if !object.is_died:
+							emit_signal("sig_enable", hint, answer)
+							if object.has_method("enable"):
+								object.enable()
+							else:
+								print("[player -> ..._body_entered]: object haven't .enable method")
 						else:
-							print("[player -> ..._body_entered]: object haven't .enable method")
-					else:
-						print("[player -> ..._body_entered]: object died, can't enable")
-		else:
-			print("[palyer -> ..._body_entered]: collision no active because object is died")
+							print("[player -> ..._body_entered]: object died, can't enable")
+			else:
+				print("[palyer -> ..._body_entered]: collision no active because object is died")
 
 func _on_InteractiveObjectDetected_body_exited(body):
 	print("[player -> ..._body_exited]: body is " + body.name)
-	if body != self:
+	if body is InteractiveObject:
+	#if body != self:
 		if body.has_method("disable"):
 			body.disable()
 		else:
