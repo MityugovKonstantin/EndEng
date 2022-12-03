@@ -15,11 +15,6 @@ func _ready():
 func kill():
 	is_died = true
 
-func create_random_question():
-	randomize()
-	var question_number = randi() % 5 + 1
-	return question_number
-
 func select_question():
 	pass
 
